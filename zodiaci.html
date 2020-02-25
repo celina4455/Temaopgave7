@@ -64,15 +64,13 @@
         }
 
 
-        article p {
-            text-align: center;
-        }
+        .horoskop p {
 
-        p {
             font-family: 'Montserrat', sans-serif;
             color: #000000;
             font-size: 0.9rem;
             letter-spacing: 0.8px;
+            text-align: center;
 
         }
 
@@ -100,7 +98,7 @@
         }
 
 
-        h2 {
+        article h2 {
             color: #000000;
             font-size: 1.5rem;
             font-family: 'Roboto Condensed';
@@ -199,7 +197,7 @@
             margin: 4rem auto;
             padding: 2rem;
             background-color: #c8e0da;
-            border: solid white 30px;
+            border: solid white 20px;
         }
 
         #detalje h2 {
@@ -224,7 +222,7 @@
             overflow: scroll;
         }
 
-        #omos_pop .luk {
+        #omos_pop .close {
             position: fixed;
             top: 3vw;
             left: 17vw;
@@ -241,20 +239,12 @@
             margin: 4rem auto;
             padding: 2rem;
             background-color: #c8e0da;
-            border: solid white 30px;
+            border: solid white 20px;
         }
 
-        #omos_pop h2 {
-            color: #000000;
-            font-size: 2.6rem;
-        }
 
-        #omos_pop p {
-            font-family: 'Montserrat', sans-serif;
-            color: #000000;
-            font-size: 1rem;
-            text-align: start;
-        }
+
+
 
         .skjul {
             display: none;
@@ -306,6 +296,29 @@
             }
         }
 
+        .omos_stor {
+            position: relative;
+        }
+
+        .omos_stor img {
+            position: absolute;
+            top: -7vw;
+            left: 2vw;
+        }
+
+        .omos_stor h2 {
+            font-family: 'Megrim', cursive;
+            font-size: 5rem;
+            color: #ffffff;
+        }
+
+        .omos_stor p {
+            font-family: 'Montserrat', sans-serif;
+            color: #000000;
+            font-size: 1rem;
+            text-align: start;
+
+        }
 
 
 
@@ -323,7 +336,7 @@
 
             #detalje .horoskop_stor {
 
-                width: 60vw;
+                width: 80vw;
                 min-height: 50vh;
                 margin: 4rem auto;
                 padding: 1rem;
@@ -341,7 +354,7 @@
             #detalje .luk {
                 position: fixed;
                 top: 9vw;
-                left: 14vw;
+                left: 7vw;
                 font-size: 1rem;
                 cursor: pointer;
                 padding: 2vw;
@@ -372,6 +385,75 @@
             .typewriter {
                 display: none;
             }
+
+            #omos_pop {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: hsla(282, 14%, 12%, 0.8);
+                overflow: scroll;
+            }
+
+            #omos_pop .close {
+                position: fixed;
+                top: 9vw;
+                left: 7vw;
+                font-size: 1rem;
+                cursor: pointer;
+                padding: 2vw;
+
+            }
+
+            #omos_pop .omos_stor {
+
+                width: 80vw;
+                min-height: 50vh;
+                margin: 4rem auto;
+                padding: 2rem;
+                background-color: #c8e0da;
+                border: solid white 10px;
+                position: relative;
+            }
+
+            .omos_stor h2 {
+                font-family: 'Megrim', cursive;
+                font-size: 3rem;
+                color: #ffffff;
+            }
+
+            .omos_stor p {
+                font-family: 'Montserrat', sans-serif;
+                color: #000000;
+                font-size: 1rem;
+                text-align: start;
+
+            }
+
+            .omos_stor img {
+                display: none;
+            }
+
+            .omos {
+                border: solid 1px white;
+                background-color: #b3d1ca;
+                margin-bottom: 1vw;
+                color: #ffffff;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1rem;
+                padding: 10px;
+                border-radius: 30px;
+                position: absolute;
+                top: 2vw;
+                right: 1.8vw;
+
+
+
+            }
+
+
+
         }
 
         @media screen and (min-width: 511px) and (max-width:1250px) {
@@ -437,6 +519,55 @@
             .typewriter {
                 display: none;
             }
+
+            #omos_pop {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: hsla(282, 14%, 12%, 0.8);
+                overflow: scroll;
+            }
+
+            #omos_pop .close {
+                position: fixed;
+                top: 5vw;
+                left: 15vw;
+                font-size: 1rem;
+                cursor: pointer;
+                padding: 2vw;
+
+            }
+
+            #omos_pop .omos_stor {
+
+                width: 60vw;
+                min-height: 50vh;
+                margin: 4rem auto;
+                padding: 2rem;
+                background-color: #c8e0da;
+                border: solid white 10px;
+                position: relative;
+            }
+
+            .omos_stor h2 {
+                font-family: 'Megrim', cursive;
+                font-size: 3rem;
+                color: #ffffff;
+            }
+
+            .omos_stor p {
+                font-family: 'Montserrat', sans-serif;
+                color: #000000;
+                font-size: 1rem;
+                text-align: start;
+
+            }
+
+            .omos_stor img {
+                display: none;
+            }
         }
 
     </style>
@@ -460,6 +591,8 @@
 
 <section class="container"></section>
 
+<!-- Pop-up vindue der vises når der klikkes på den enkelte -->
+
 <section id="detalje" class="skjul">
     <article class="horoskop_stor">
         <button class="luk">Luk</button>
@@ -478,10 +611,17 @@
 <section id="omos_pop" class="skjul">
     <article class="omos_stor">
         <button class="close">Luk</button>
-        <h2>Os</h2>
+        <img src="Logo.svg" alt="">
+
+        <h2>Zodiaci</h2>
+        <p>Velkommen til Zodiaci!</p>
+        <p>Dette er din simple vej, til horoskoper uden alt det overflødige.<br> Er du nysgerrig på hvordan din uge ser ud? <br> Hvad du bør, eller ikke bør sørge for denne måned? <br> Eller hvad der er helt essentielt for dig, at være opmærksom på dette år? <br><br>
+            Læs med her, hvor vi løbende opdaterer med forudsigelser fra stjernerne.</p>
+
     </article>
 </section>
 
+<!--Template bruges da alle articles skal være ens - udfyldes med information fra json -->
 <template>
 
     <article class="horoskop">
@@ -547,7 +687,7 @@
 
         function filtrering() {
             console.log("FILTRERING");
-            //            document.querySelector("h1").textContent = this.textContent;
+            //*** filter funktionen sørger for at der kan sorteres mellem uge, måned og år, henter data fra json *****//
             filter = this.dataset.type;
             document.querySelectorAll(".filter").forEach(elm => {
                 elm.classList.remove("valgt");
@@ -557,6 +697,8 @@
         }
 
         async function hentData() {
+
+            //******* Henter og fetcher json-data fra googlesheet *****//
             const response = await fetch(endpoint);
             console.log(response);
             horoskoper = await response.json();
@@ -571,6 +713,8 @@
             const horoskoperTemplate = document.querySelector("template");
 
             container.innerHTML = "";
+
+            //***** Henter templaten fra html og fylder det ud med det relevante data fra json, tilføjes med textContent og tilføjes til hver enkel med forEach, i containeren appendes childet klonen, altså alle articles fyldes ud med indholdet ****//
 
             horoskoper.feed.entry.forEach(hverHoroskop => {
                 if (filter == hverHoroskop.gsx$kategori.$t) {
